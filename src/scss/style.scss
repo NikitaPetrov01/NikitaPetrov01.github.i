@@ -1,0 +1,250 @@
+html {
+    font-family: 'ProximaNova';
+
+
+    
+
+}
+// p {padding: 0;}
+.header{
+    display:flex;
+    height: 40px;
+    flex-direction: row;
+    border-bottom: 1px solid #ededed;
+    align-items: center;
+    justify-content: space-between; 
+    // &__contacts{
+    //     display: flex;
+    //     flex-direction: row;
+    // }
+}
+.header__contacts{
+    display: flex;
+    flex-direction: row;
+    p{
+    margin: 0;
+    color: black;
+    }
+    a{
+        color: black;
+        
+    }
+    .fas{
+        color: black;
+        
+    }
+    .far{
+        color: black;
+        padding-left: 5px;
+    }
+    
+}
+
+a { 
+    text-decoration: none; 
+   } 
+
+.header__link{
+    color: black;
+    font-family: 'ProximaNova';
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+    text-decoration: none;
+    padding-top: 2px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    span{
+        font-weight: 300;
+    }
+    p{
+        margin: 0;
+    }
+
+
+
+
+}
+.social{
+    margin-left: 10px;
+}
+
+.social__icon{
+    color: gray;
+    transition: .5s;
+    padding-right: 10px;
+
+
+}
+.social__icon:hover{
+text-decoration: none;
+}
+.header__link{
+    font-size: 12px;
+}
+
+.nav{
+    width: 100%;
+    height: 120px;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.col{
+    display: flex;
+}
+ .nav__items{
+    height: 100%;
+    display:flex;   
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'ProximaNova';
+    font-weight: 300;
+    align-items: center;
+    margin: 0;
+    padding-top: 5px;
+    justify-content: space-between;
+    
+    
+    
+}
+ul{
+    padding: 0;
+}
+.nav__items a{
+    // padding-left: 55px;
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    
+}
+.nav__logo{
+    align-items: center;
+    align-content: center;
+    /* padding-left: 151px; */
+    width: 200px;
+    margin: 0;
+    display: flex;
+    
+}  
+.image{
+    margin: 0;
+    overflow:hidden;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+.icon-block{
+    
+    min-height: 340px;
+    align-content: center;
+    
+    
+}
+
+.icon-block__svg{
+    max-width: 65px;  
+    position: relative;
+    top: 25%;
+    
+    
+}
+.icon__wrapper{
+    border: 1px solid #1275b9;
+    border-radius: 50%;
+    height: 65px;
+    width:65px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    
+    
+}
+.icon-block__article h3{
+    font-family: 'ProximaNova';
+    font-weight: 400;
+    font-size: 14px;
+    padding-bottom: 10px;
+    
+}
+.icon-block__article{
+    text-align: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+.icon-block__article p{
+    color: #9d9d9d;
+    font-size: 14px;
+}
+.bg-blue{
+    background: #1275b9; 
+}
+.svg--settings{
+ top: 30%;
+}
+.tabs-block{
+    height: 580px;
+    background-image: url(../src/psd/Velox-assets/One.png);
+    background-position: bottom;
+    text-align: center;
+    border-bottom: #bdbdbd 2px solid;
+
+
+}
+.tabs-block h2{
+    font-size: 24px;
+    font-family: 'ProximaNova';
+    font-weight: 400;
+
+}
+.tabs-block p{
+    font-family: 'ProximaNova';
+    color: gray;
+    font-size: 14px;
+    font-weight: 300;
+    
+}
+.text-block{
+    padding-top: 60px;
+}
+.tabs-block hr{
+    width: 100%;
+    height: 2px;
+    color:#bdbdbd;    
+}
+.dropdown{
+    position: absolute;
+    right: 100%;
+}
+.dropdown-item{
+    font-family: 'ProximaNova';
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    align-items: center;
+
+}
+@import "./blocks/portfolio.scss";
+@import "./blocks/latest.scss";
+@import "./blocks/sponsors.scss";
+@import "./blocks/footer.scss";
+@media all and (max-width: 480px) { 
+    .nav{
+        height: auto;
+    } 
+    .swiper-button-next{
+        padding-right: 50px !important;
+    }
+}
+
